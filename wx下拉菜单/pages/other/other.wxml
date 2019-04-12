@@ -1,0 +1,12 @@
+<!-- logs.wxml -->
+<view>
+  <view>123</view>
+  <block>
+    <view>
+      <view>你输入的是{{inputValue}}</view>
+      <input bindinput="bindKeyInput" placeholder="输入同步到view中" />
+    </view>
+  </block>
+  <view class='userName'>{{userInfo}}</view>
+  <view></view>
+</view>

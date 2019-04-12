@@ -1,0 +1,6 @@
+.other{
+    color: red;
+}
+.userName{
+    color: #ccc;
+}

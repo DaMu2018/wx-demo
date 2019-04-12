@@ -1,0 +1,42 @@
+<!-- index.wxml -->
+<view class="container">
+  <!-- <view class=' page_row'>
+  <view class="nav" wx:for='{{nav_title}}' wx:key="index">
+    <view 
+    class="nav_item page_row {{shownavindex == index? 'on' : ''}}"
+     bindtap="click_nav" 
+     data-index="{{index}}">
+        <view class="content">{{item}}
+          <view class="red {{shownavindex == index? 'icon' : 'no_icon'}}">></view>
+        </view>
+    </view>
+  </view>
+</view>
+<view class='nav_centent_arr' wx:if="{{nav_centent.length}}">
+  <view style="height:408rpx">
+    <block wx:for="{{nav_centent}}" wx:key="index">
+      <view class='nav_centent'>{{item}}</view>
+    </block>
+  </view>
+  <button class='nav_btn'>确认</button>
+</view> -->
+
+  <view class="nav">
+    <view bindtap='selectToggle' 
+    wx:key="index" data-index="{{index}}" 
+    wx:for="{{nav_title}}" class="navBtn  red{{shownavindex == index ? '' : 'on'}}">{{item}}</view>
+  </view>
+  <view wx:if="{{nav_centent.length}}" class="nav_centent_arr">
+      <view >
+        <block wx:for="{{nav_centent}}" wx:key="index" wx:for-item="navCentent">
+          <view >{{navCentent}}</view>
+        </block>
+      </view>
+  </view>
+  <view>
+    <view>输入的名字{{inputName}}</view>
+    <input type="text" bindinput="bindTap" placeholder="请输入姓名" />
+  </view>
+  <!-- <button bindtap='clickDemo'>点击</button>
+  <view catchtap="toOther">跳转</view> -->
+</view>

@@ -1,0 +1,38 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.nav{
+  display: flex;
+  width: 100%;
+}
+.navBtn{
+  display: inline-block;
+  width: 25%;
+  text-align: center;
+  border: 1px solid #000;
+}
+.red{
+  color: red;
+}
+.nav_centent_arr{
+  width: 100%;
+  text-align: left;
+  animation: mymove 0s;
+}
+@keyframes mymove {
+    from {height: 0;}
+    to { height: auto;}
+}
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
